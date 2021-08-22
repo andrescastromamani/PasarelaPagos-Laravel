@@ -18,6 +18,29 @@
                                         Use values with up to tow decimal positions,using dot "."
                                     </small>
                                 </div>
+                                <div class="col">
+                                    <label for="">Select Currency</label>
+                                    <select name="currency" id="" class="custom-select" required>
+                                        @foreach($currencies as $currency)
+                                            <option value="{{$currency->iso}}">{{strtoupper($currency->iso)}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-2">
+                                    <label for="">Select Payment Platform</label>
+                                    <div class="form-group">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            @foreach($paymentPlatforms as $paymentPlatform)
+                                                <label for="" class="btn btn-outline-secondary rounded m-2 p-1">
+                                                    <input type="radio" name="payment_platform" value="{{$paymentPlatform->id}}" required>
+                                                    <img class="img-thumbnail" src="{{asset($paymentPlatform->image)}}" alt="">
+                                                </label>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col text-center mt-2">
