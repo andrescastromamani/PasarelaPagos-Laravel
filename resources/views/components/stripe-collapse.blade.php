@@ -1,0 +1,1 @@
+<smal>sTRIPE</smal>

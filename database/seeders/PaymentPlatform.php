@@ -15,7 +15,7 @@ class PaymentPlatform extends Seeder
     {
         \App\Models\PaymentPlatform::create([
             'name'=>'PayPal',
-            'image'=>'img/payment-platforms/palpay.jpg'
+            'image'=>'img/payment-platforms/paypal.jpg'
         ]);
         \App\Models\PaymentPlatform::create([
             'name'=>'Stripe',
