@@ -51,7 +51,7 @@ class PayPalService
                         ]
                     ]
                 ],
-                'aplication_context' => [
+                'application_context' => [
                     'brand_name' => config('app.name'),
                     'shipping_preference' => 'NO_SHIPPING',
                     'user_action' => 'PAY_NOW',
@@ -61,6 +61,19 @@ class PayPalService
             ],
             [],
             $isJsonRequest = true,
+        );
+    }
+
+    public function capturePayment($approvalId)
+    {
+        return $this->makeRequest(
+            'POST',
+            "/v2/checkout/orders/{$approvalId}/capture",
+            [],
+            [],
+            [
+                'Content-Type' => 'application/json',
+            ]
         );
     }
 }
