@@ -32,7 +32,7 @@ class StripeService
 
     public function resolveAccessToken()
     {
-
+        return "Bearer {$this->secret}";
     }
 
     public function handlePayment(Request $request)
