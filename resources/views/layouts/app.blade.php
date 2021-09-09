@@ -115,6 +115,6 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 <script src="{{ asset('js/app.js') }}" defer></script>
-@stack('js')
+@stack('scripts')
 </body>
 </html>
