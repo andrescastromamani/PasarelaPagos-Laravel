@@ -55,7 +55,7 @@
                             </div>
                             <div class="row">
                                 <div class="col text-center mt-2">
-                                    <button class="btn btn-primary" type="submit">Pay</button>
+                                    <button class="btn btn-primary" type="submit" id="payButton">Pay</button>
                                 </div>
                             </div>
                         </form>
