@@ -14,12 +14,16 @@ class PaymentPlatform extends Seeder
     public function run()
     {
         \App\Models\PaymentPlatform::create([
-            'name'=>'PayPal',
-            'image'=>'img/payment-platforms/paypal.jpg'
+            'name' => 'PayPal',
+            'image' => 'img/payment-platforms/paypal.jpg'
         ]);
         \App\Models\PaymentPlatform::create([
-            'name'=>'Stripe',
-            'image'=>'img/payment-platforms/stripe.jpg'
+            'name' => 'Stripe',
+            'image' => 'img/payment-platforms/stripe.jpg'
+        ]);
+        \App\Models\PaymentPlatform::create([
+            'name' => 'MercadoPago',
+            'image' => 'img/payment-platforms/mercadopago.jpg'
         ]);
     }
 }
